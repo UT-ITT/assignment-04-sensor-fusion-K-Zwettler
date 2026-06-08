@@ -13,3 +13,8 @@ Das Programm muss mit folgenden Argumenten in der Kommandozeile ausgeführt werd
 Beispiel Eingabe: python3 image_extractor.py sample_image.jpg result.jpg 1000 600
 
 Das Programm wird dann gestartet und man kann Punkte einzeichnen und diese durch das Drücken von 'esc' wieder löschen. Sobald 4 Punkte eingezeichnet wurden, wird das transformierte Bild in einem neuen Fenster gezeigt und durch Drücken von 's' kann man dieses speichern. Indem man 'q' drückt, kann man alle Fenster schließen.
+
+# 2
+
+In meinem AR game werden, sobald die vier Aruco Marker erkannt werden, blaue und ein rote Bälle von unten nach oben geschossen, bevor sie dann wieder nach unten fallen und verschwinden. Ziel ist es, mit dem Finger die blauen Bälle zu zerstören, indem man sie berührt. Das erhöht den score. Berührt man allerdings die roten Bälle, so geht der score wieder runter.
+Das Spiel kann durch das Drücken von 'q' wieder geschlossen werden.
