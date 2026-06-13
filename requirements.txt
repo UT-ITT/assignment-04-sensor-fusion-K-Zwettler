@@ -3,3 +3,4 @@ numpy
 pyglet
 Pillow
 random
+time

@@ -16,5 +16,10 @@ Das Programm wird dann gestartet und man kann Punkte einzeichnen und diese durch
 
 # 2
 
-In meinem AR game werden, sobald die vier Aruco Marker erkannt werden, blaue und ein rote Bälle von unten nach oben geschossen, bevor sie dann wieder nach unten fallen und verschwinden. Ziel ist es, mit dem Finger die blauen Bälle zu zerstören, indem man sie berührt. Das erhöht den score. Berührt man allerdings die roten Bälle, so geht der score wieder runter.
+In meinem AR game werden, sobald die vier Aruco Marker erkannt werden, blaue und Bälle (und hin und wieder ein roter) von unten nach oben geschossen, bevor sie dann wieder nach unten fallen und verschwinden. Ziel ist es, mit dem Finger die blauen Bälle zu zerstören, indem man sie berührt. Das erhöht den score. Berührt man allerdings die roten Bälle, so geht der score wieder runter.
 Das Spiel kann durch das Drücken von 'q' wieder geschlossen werden.
+Um den Finger konsequent zu erkennen, darf die Belichtung nicht zu hell sein.
+
+# 3
+
+Der Alpha-Wert bestimmt, wie viel Einfluss die Kamera-Positions-Werte haben und wie viel die accelerometer Daten. Erhöht man das alpha, so hat die Kamera mehr Einfluss, was bei meiner Implementierung dafür sorgt, dass der grüne Punkt sich mehr dem roten nähert. Wird das alpha kleiner, so haben die accelerometer Daten mehr Einfluss auf die Position des grünen Punktes, was diesen weiter vom roten Punkt wegdriften lässt. Die Kameraposition des Markers ist etwas genauer als wenn man die Position von den accelerometer Daten herleitet.
