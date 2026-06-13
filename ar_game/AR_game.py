@@ -181,15 +181,16 @@ def get_transformed_frame(corners, frame):
     
     # assign the right rectangle position
     for i in range(4):
-        if means[i][0] == x_values[2] or means[i][0] == x_values[3]:
-            if means[i][1] == y_values[2] or means[i][1] == y_values[3]:
+        if means[i][0] > center[0]:
+            if means[i][1] > center[1]:
                 BR = i
             else:
                 TR = i
-        elif means[i][1] == y_values[2] or means[i][1] == y_values[3]:
-            BL = i
         else: 
-            TL = i
+            if means[i][1] > center[1]:
+                BL = i
+            else: 
+                TL = i
 
     # get the corner closest to the middle
     def inner_corner(idx):
